@@ -1,0 +1,164 @@
+@charset "UTF-8";
+@import "normalize";
+@import "base";
+@import "veriable";
+.red{
+  color: red;
+}
+.container{
+  width: 100%;
+  max-width:10.00rem;
+  min-width: 4.27rem;
+
+  background-color: #f1f1f1;
+  margin: 0 auto;
+
+  .header{
+    height: 1.33rem;
+    width: 100%;
+    background-color: #FF841D;
+    position: relative;
+    .tit{
+      width: 100%;
+      text-align: center;
+      height: 100%;
+      line-height:1.33rem;
+      color: #FFFFFF;
+      font-size: 0.53rem;
+    }
+    .fa{
+      font-size:0.53rem;
+      color: #FFFFFF;
+      position: absolute;
+      left: 0.40rem;
+      top:0.40rem;
+    }
+    .download{
+
+
+      height:0.91rem;
+      width:0.91rem;
+      background: url('../images/header_app.png') center center;
+      background-size: 0.91rem 0.91rem;
+      position: absolute;
+      right: 0.27rem;
+      top: 0.21rem;
+    }
+
+
+  }
+
+  .footer{
+    margin-top: 0.67rem;
+    padding:0 0 0.53rem 0;
+    width: 100%;
+    background-color: @bcColor;
+    .top{
+      overflow: hidden;
+      border-top:0.03rem solid #c4c4c4;
+      border-bottom:0.03rem solid #c4c4c4 ;
+      a{
+        height:0.63rem;
+        float: left;
+        line-height: 0.63rem;
+        text-align: center;
+        border-right:   0.03rem solid #c4c4c4;
+        display: inline-block;
+        width: 33.3%;
+        font-size: 0.37rem;
+      }
+      a:last-of-type{
+        border: none;
+      }
+    }
+    .bottom{
+      color: #5b6168;
+      margin-top: 0.32rem;
+      p{
+        text-align: center;
+        font-size: 0.27rem;
+
+      }
+      .app{
+        color: red;
+      }
+    }
+  }
+  .nav{
+    height: 1.07rem;
+
+    .fr{
+      height: 1.00rem;
+      width:1.07rem;
+      font-size: 0.80rem;
+      line-height: 1.07rem;
+      text-align: center;
+      color: #585757;
+      background-color: #f4f4f4;
+      border-left: 1px solid @borderColor;
+      border-bottom: 1px solid @borderColor;
+    }
+    .list{
+      height:1.00rem;
+     border-bottom: 1px solid @borderColor;
+
+      background-color: #fff;
+      .popsort{
+        background-color: #fff;
+        display: none;
+        z-index: 999;
+        width: 10.00rem;
+        position: absolute;
+        top: 1.00rem;
+        left: 0;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        li{
+          border-top: 1px solid @borderColor;
+          text-align: left;
+          padding: 0 0.27rem;
+          i{
+            color: #ff841d;
+            float: right;
+            padding-top: 0.29rem;
+            display: none;
+          }
+          i.active{
+            display: inline-block;
+          }
+
+        }
+        li:nth-child(1){
+          border: none;
+        }
+      }
+      .active{
+        display: block;
+
+
+      }
+
+      .on{
+        width: 223px;
+        height: 1.00rem;
+        line-height: 1.00rem;
+        text-align: center;
+        float: left;
+        font-size: 0.40rem;
+        position: relative;
+      }
+
+
+    }
+
+
+
+
+
+  }
+  .list3{
+    height: 2000px;
+  }
+
+
+
+}

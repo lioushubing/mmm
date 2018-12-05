@@ -1,0 +1,253 @@
+@charset "UTF-8";
+@import "normalize";
+@import "base";
+@import "veriable";
+.red{
+  color: red;
+}
+.container{
+  width: 100%;
+  max-width:10.00rem;
+  min-width: 4.27rem;
+
+  background-color: #f4f4f4;
+  margin: 0 auto;
+
+  .header{
+    height: 1.33rem;
+    width: 100%;
+    background-color: #FF841D;
+    position: relative;
+    .tit{
+      width: 100%;
+      text-align: center;
+      height: 100%;
+      line-height:1.33rem;
+      color: #FFFFFF;
+      font-size: 0.53rem;
+    }
+    .fa{
+      font-size:0.53rem;
+      color: #FFFFFF;
+      position: absolute;
+      left: 0.40rem;
+      top:0.40rem;
+    }
+    .download{
+
+
+      height:0.91rem;
+      width:0.91rem;
+      background: url('../images/header_app.png') center center;
+      background-size: 0.91rem 0.91rem;
+      position: absolute;
+      right: 0.27rem;
+      top: 0.21rem;
+    }
+
+
+  }
+
+  .footer{
+    margin-top: 0.67rem;
+    padding:0 0 0.53rem 0;
+    width: 100%;
+    background-color: @bcColor;
+    .top{
+      overflow: hidden;
+      border-top:0.03rem solid #c4c4c4;
+      border-bottom:0.03rem solid #c4c4c4 ;
+      a{
+        height:0.63rem;
+        float: left;
+        line-height: 0.63rem;
+        text-align: center;
+        border-right:   0.03rem solid #c4c4c4;
+        display: inline-block;
+        width: 33.3%;
+        font-size: 0.37rem;
+      }
+      a:last-of-type{
+        border: none;
+      }
+    }
+    .bottom{
+      color: #5b6168;
+      margin-top: 0.32rem;
+      p{
+        text-align: center;
+        font-size: 0.27rem;
+
+      }
+      .app{
+        color: red;
+      }
+    }
+  }
+  .nav{
+    height: 1.07rem;
+    .fr{
+      height: 1.07rem;
+      width:1.07rem;
+      font-size: 0.80rem;
+      line-height: 1.07rem;
+      text-align: center;
+      color: #585757;
+      background-color: #f4f4f4;
+      border-left: 1px solid @borderColor
+
+    }
+    .list{
+      overflow: hidden;
+      background-color: #fff;
+      ul{
+       height: 100%;
+        width: 2000px;
+    padding-left: 0.13rem;
+
+
+      }
+      li{
+       float: left;
+        height: 100%;
+        a{
+          line-height:1.07rem ;
+          text-align: center;
+          display: block;
+          height:1.07rem;
+          padding: 0 0.33rem ;
+          font-size: 0.32rem;
+          border-bottom: 4px solid transparent;
+        }
+        a.active{
+          border-color:#e12a2b;
+        }
+      }
+    }
+
+
+
+
+
+  }
+  .content{
+   li{
+     height:4.00rem;
+     margin-top:0.10rem;
+     background-color: #fff;
+     padding: 0.27rem 0.13rem;
+     .img{
+       height: 3.47rem;
+       width:3.47rem;
+     }
+     .post{
+       overflow: hidden;
+       height: 100%;
+
+       padding-left: 0.13rem;
+       position: relative;
+       .postage{
+         height: 0.48rem;
+         font-size: 0.30rem;
+       }
+       .price{
+         height:0.83rem;
+         padding-top: 0.27rem;
+         color: #fc0512;
+         font-size:0.32rem;
+        .da{
+          font-size: 0.40rem;
+        }
+         del{
+           color: #a79f9a;
+         }
+
+       }
+       .bar{
+         overflow: hidden;
+         height: 0.59rem;
+         padding-top:0.13rem;
+         i{
+           display: block;
+           width: 2.20rem;
+           height: 0.40rem;
+           background-color: #ffb7b7;
+           text-align: center;
+           line-height: 0.46rem ;
+           position: relative;
+           border-radius:0.05rem;
+           overflow: hidden;
+           border: 1px solid #fb060a;
+           em{
+             position: absolute;
+             top: 0;
+             left: 0;
+             background-color: #fc353a;
+             height: 100%;
+             display: inline-block;
+
+
+           }
+           span{
+             color: #FFFFFF;
+
+
+             display: inline-block;
+
+
+           }
+           
+
+         }
+         b{
+          font-weight: normal;
+           margin-left: 0.07rem;
+           font-size: 0.33rem;
+           color: #fd3c2c;
+         }
+
+       }
+       .coupon{
+         position: absolute;
+         bottom: 0;
+
+          width: 2.87rem;
+         height: 0.67rem;
+         border:4px dashed #ef898b ;
+         font-size:0.27rem;
+         text-align: center;
+         line-height:  0.67rem;
+         a{
+           color: #fc0512;
+         }
+
+       }
+       .link{
+         position: absolute;
+         right:0.21rem;
+         bottom: 0;
+
+         background-color: #ff5e5d;
+         width: 1.52rem;
+         height: 0.60rem;
+         border-radius: 0.05rem;
+         font-size: 0.27rem;
+         text-align: center;
+         line-height:  0.60rem;
+         a{
+           color: #FFFFFF;
+         }
+
+       }
+
+
+     }
+
+
+
+
+   }
+  }
+
+
+}

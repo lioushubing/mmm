@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@import "normalize";
+@import "base";
+@import "veriable";
+.red{
+  color: red;
+}
+.container{
+  width: 100%;
+  max-width:10.00rem;
+  min-width: 4.27rem;
+
+  background-color: #FFFFFF;
+  margin: 0 auto;
+
+  .header{
+    height: 1.33rem;
+    width: 100%;
+    background-color: #FF841D;
+    position: relative;
+    .tit{
+      width: 100%;
+      text-align: center;
+      height: 100%;
+      line-height:1.33rem;
+      color: #FFFFFF;
+      font-size: 0.53rem;
+    }
+    .fa{
+      font-size:0.53rem;
+      color: #FFFFFF;
+      position: absolute;
+      left: 0.40rem;
+      top:0.40rem;
+    }
+    .download{
+
+
+      height:0.91rem;
+      width:0.91rem;
+      background: url('../images/header_app.png') center center;
+      background-size: 0.91rem 0.91rem;
+      position: absolute;
+      right: 0.27rem;
+      top: 0.21rem;
+    }
+
+
+  }
+
+  .footer{
+    margin-top: 0.67rem;
+    padding:0 0 0.53rem 0;
+    width: 100%;
+    background-color: @bcColor;
+    .top{
+      overflow: hidden;
+      border-top:0.03rem solid #c4c4c4;
+      border-bottom:0.03rem solid #c4c4c4 ;
+      a{
+        height:0.63rem;
+        float: left;
+        line-height: 0.63rem;
+        text-align: center;
+        border-right:   0.03rem solid #c4c4c4;
+        display: inline-block;
+        width: 33.3%;
+        font-size: 0.37rem;
+      }
+      a:last-of-type{
+        border: none;
+      }
+    }
+    .bottom{
+      color: #5b6168;
+      margin-top: 0.32rem;
+      p{
+        text-align: center;
+        font-size: 0.27rem;
+
+      }
+      .app{
+        color: red;
+      }
+    }
+  }
+  .title{
+    //235 160
+    overflow: hidden;
+    li{
+      width:3.07rem;
+      height: 2.13rem;
+      border: 2px solid @borderColor;
+      margin-top: 0.13rem;
+      margin-left: 0.16rem;
+      padding-top: 0.13rem;
+      float: left;
+      img{
+        width: 1.33rem;
+        height: 1.33rem;
+        margin: 0 auto;
+
+
+      }
+      p{
+        text-align: center;
+        font-size: 0.30rem;
+      };
+    }
+  }
+
+
+}
