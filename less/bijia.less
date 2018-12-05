@@ -1,0 +1,300 @@
+@charset "UTF-8";
+@import "normalize";
+@import "base";
+@import "veriable";
+.container{
+  width: 100%;
+  max-width:10.00rem;
+  height: 26.67rem;
+  min-width: 4.27rem;
+
+  background-color: #f1f1f1;
+  margin: 0 auto;
+  .tit{
+    height: 1.00rem;
+    border-bottom:1px solid @borderColor ;
+    border-top: 1px solid @borderColor;
+    background-image: linear-gradient(#ffffff,#cccccc);
+    padding: 0 0.13rem;
+    line-height: 1.00rem;
+    font-size: 0.30rem;
+    a.sai{
+      width: 1.67rem;
+      height: 0.80rem;
+      margin-top: 0.11rem;
+      line-height: 0.80rem;
+      text-align: center;
+      background-image:linear-gradient(#cccccc,#ffffff) ;
+      border-radius: 0.13rem;
+    }
+  }
+  .header{
+    height: 1.33rem;
+    width: 100%;
+    background-color: #FF841D;
+    position: relative;
+    .logo{
+
+      width: 4.95rem;
+      height: 0.67rem;
+      background: url('../images/header_logo.png') center center;
+
+      background-size:4.95rem
+      0.67rem;
+      position: absolute;
+      top:0.35rem;
+      left:0.29rem;
+
+    }
+    .download{
+
+
+      height:0.91rem;
+      width:0.91rem;
+      background: url('../images/header_app.png') center center;
+      background-size: 0.91rem 0.91rem;
+      position: absolute;
+      right: 0.27rem;
+      top: 0.21rem;
+    }
+
+
+  }
+  .search{
+    height: 1.33rem;
+    width: 100%;
+    padding-right:1.92rem;
+    padding-left: 0.16rem;
+    position: relative;
+    background-color: #fff;
+    button{
+      height: 0.80rem;
+      width: 1.60rem;
+      background-color: #FF841D;
+      position: absolute;
+      top:0.29rem;
+      right: 0.21rem;
+      border-radius: 0.4rem;
+      color: floralwhite;
+      font-size: 0.30rem;
+    }
+    input{
+      width: 100%;
+      height: 0.80rem;
+      border-radius: 0.4rem;
+      background-color: #f1f1f1;
+      margin-top: 0.27rem;
+      font-size: 0.24rem;
+      padding-left: 0.24rem;
+    }
+  }
+  .footer{
+
+    padding: 0  0 0.53rem ;
+    width: 100%;
+    background-color:  @bcColor;
+    .top{
+      overflow: hidden;
+      border-top:0.03rem solid #c4c4c4;
+      border-bottom:0.03rem solid #c4c4c4 ;
+      a{
+        height:0.63rem;
+        float: left;
+        line-height: 0.63rem;
+        text-align: center;
+        border-right:   0.03rem solid #c4c4c4;
+        display: inline-block;
+        width: 33.3%;
+        font-size: 0.37rem;
+      }
+      a:last-of-type{
+        border: none;
+      }
+    }
+    .bottom{
+      color: #5b6168;
+      margin-top: 0.32rem;
+      p{
+        text-align: center;
+        font-size: 0.27rem;
+
+      }
+      .app{
+        color: red;
+      }
+    }
+  }
+  .more-bar{
+
+    padding: 0.08rem 0.08rem 0.08rem;
+    background-color: #ffffff;
+
+    a{
+      display: block;
+      height: 0.80rem;
+      line-height: 0.80rem;
+      text-align: center;
+      font-size: 0.29rem;
+      border: 0.03rem solid #b4b4b4;
+      border-radius: 0.13rem;
+      background-image: linear-gradient(#f1f1f1, #d4d4d4);
+
+    }
+  }
+  .product{
+    height: 6.67rem;
+    background-color: #fff;
+    position: relative;
+    .top{
+      height: 2.00rem;
+      padding: 0.53rem 0.67rem 0 0.67rem;
+      p{
+        font-size: 0.44rem;
+        text-align: center;
+      }
+    }
+    .bottom{
+
+      img{
+        height: 4.27rem;
+        width: 4.27rem;
+        margin: 0 auto;
+      }
+
+    }
+    .tu{
+      height: 1.13rem;
+      width: 1.13rem;
+      background-color: #91d701;
+      border-radius: 50%;
+      text-align: center;
+      line-height:1.13rem ;
+      color: #FFFFFF;
+      font-size:0.40rem;
+      position: absolute;
+      bottom: 0.53rem;
+      right: 0.59rem;
+    }
+  }
+  .tab{
+    ul{
+      overflow: hidden;
+      border-top: 1px solid #000000;
+      border-bottom: 1px solid #000000;
+      li{
+        width:33.33%;
+       float: left;
+        height: 0.93rem;
+        text-align: center;
+        line-height: 0.93rem;
+        font-size: 0.33rem;
+      }
+      li:nth-child(1){
+        background-color: #ff9b19;
+      }
+      li:nth-child(2){
+        background-color: #ffc833;
+        border-left: 1px solid #000000;
+        border-right:1px solid #000000 ;
+      }
+      li:nth-child(3){
+        background-color: #ffc833;
+      }
+    }
+
+  }
+  .price{
+    background-color: #fff;
+    .top{
+
+      overflow: hidden;
+      padding-left: 0.21rem;
+      padding-right: 0.11rem;
+      border-bottom: 1px solid @borderColor;
+      .fl{
+        width: 0.92rem;
+        height: 1.07rem;
+        position: relative;
+        img{
+          height: 0.47rem;
+          width: 0.47rem;
+          margin-top: 0.29rem;
+          margin-left: 0.04rem;
+
+        }
+        div{
+          position: absolute;
+          left: 0.8rem;
+          top: 0;
+            line-height:1.07rem ;
+          width:5.33rem;
+          height:1.07rem;
+        }
+      }
+      .rmb1,
+      .rmb2{
+
+         height: 1.07rem;
+        line-height:1.07rem ;
+      }
+      .rmb2{
+        width: 2.00rem;
+        text-align: center;
+        font-size:0.27rem;
+        color: #cd0117;
+      }
+      .rmb1{
+        height: 1.07rem;
+        line-height:  1.07rem;
+        width: 1.73rem;
+        font-size:0.27rem;
+      div{
+           margin-top: 0.24rem;
+          width:1.60rem;
+
+          text-align: center;
+          background-color: #ff5500;
+          border-radius: 0.07rem;
+          height: 0.67rem;
+        line-height: 0.67rem;
+        font-size: 0.30rem;
+        color: #FFFFFF;
+        }
+      }
+
+    }
+    .bottom{
+      height:1.47rem;
+      padding: 0.27rem 0.20rem;
+      font-size: 0.30rem;
+      color: #808385;
+    }
+  }
+  .comment{
+    .tit2{
+      height: 0.93rem;
+      width: 100%;
+      border-top: 2px solid #000000;
+      background-color: #dbdbdb;
+       text-align: center;
+      line-height:0.93rem ;
+      font-size:0.37rem;
+    }
+    .content{
+      width: 100%;
+
+      background-color: #fff;
+      border-bottom: 2px solid @borderColor;
+      padding: 0.20rem;
+      .top{
+        height: 0.27rem;
+
+      }
+      .center{
+        height: 0.27rem;
+      }
+
+    }
+  }
+
+}
