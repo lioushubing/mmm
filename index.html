@@ -28,57 +28,7 @@
 </div>
     <!--导航-->
 <div class='nav'>
-    <ul class='row'>
-        <li>
-            <a href="#">
-                <img src="images/ic_search.png" alt="">
-                <p>比价搜索</p>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="images/ic_search.png" alt="">
-                <p>比价搜索</p>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="images/ic_search.png" alt="">
-                <p>比价搜索</p>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="images/ic_search.png" alt="">
-                <p>比价搜索</p>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="images/ic_search.png" alt="">
-                <p>比价搜索</p>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="images/ic_search.png" alt="">
-                <p>比价搜索</p>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="images/ic_search.png" alt="">
-                <p>比价搜索</p>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="images/ic_search.png" alt="">
-                <p>比价搜索</p>
-            </a>
-        </li>
-
-    </ul>
+    <ul class='row' id='nav1'></ul>
 
 
 </div>
@@ -92,147 +42,12 @@
     </div>
 <!--折扣部分-->
 <div class='discount'>
-<ul>
-
-    <li>
-    <a href="#">
-        <div class='left fl'>
-            <img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg" alt="">
-        </div>
-        <div class='right'>
-            <div class='top'>
-
-                移动端凑单品：海天 鲜味 生抽 1.28L
-             <span>10.9元</span>
-
-            </div>
-            <div class='bottom'>
-                <span class='fl'>天猫商城 | 10-25 13:57</span>
-                <span class='fr'>有2人评论</span>
-
-            </div>
-
-        </div>
-
-
-
-
-    </a>
-
-</li>
-    <li>
-        <a href="#">
-            <div class='left fl'>
-                <img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg" alt="">
-            </div>
-            <div class='right'>
-                <div class='top'>
-
-                    移动端凑单品：海天 鲜味 生抽 1.28L
-                    <span>10.9元</span>
-
-                </div>
-                <div class='bottom'>
-                    <span class='fl'>天猫商城 | 10-25 13:57</span>
-                    <span class='fr'>有2人评论</span>
-
-                </div>
-
-            </div>
-
-
-
-
-        </a>
-
-    </li>
-    <li>
-    <a href="#">
-        <div class='left fl'>
-            <img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg" alt="">
-        </div>
-        <div class='right'>
-            <div class='top'>
-
-                移动端凑单品：海天 鲜味 生抽 1.28L
-                <span>10.9元</span>
-
-            </div>
-            <div class='bottom'>
-                <span class='fl'>天猫商城 | 10-25 13:57</span>
-                <span class='fr'>有2人评论</span>
-
-            </div>
-
-        </div>
-
-
-
-
-    </a>
-
-</li>
-    <li>
-        <a href="#">
-            <div class='left fl'>
-                <img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg" alt="">
-            </div>
-            <div class='right'>
-                <div class='top'>
-
-                    移动端凑单品：海天 鲜味 生抽 1.28L
-                    <span>10.9元</span>
-
-                </div>
-                <div class='bottom'>
-                    <span class='fl'>天猫商城 | 10-25 13:57</span>
-                    <span class='fr'>有2人评论</span>
-
-                </div>
-
-            </div>
-
-
-
-
-        </a>
-
-    </li>
-    <li>
-    <a href="#">
-        <div class='left fl'>
-            <img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg" alt="">
-        </div>
-        <div class='right'>
-            <div class='top'>
-
-                移动端凑单品：海天 鲜味 生抽 1.28L
-                <span>10.9元</span>
-
-            </div>
-            <div class='bottom'>
-                <span class='fl'>天猫商城 | 10-25 13:57</span>
-                <span class='fr'>有2人评论</span>
-
-            </div>
-
-        </div>
-
-
-
-
-    </a>
-
-</li>
-
-
-
-
-
+<ul id='more'>
+<!---->
 </ul>
 <!--更多-->
     <div class='more-bar'>
-        <a href="#">更多优惠信息>> </a>
+        <a href="moneyctrl.html">更多优惠信息>> </a>
     </div>
 
 </div>
@@ -264,8 +79,58 @@
 
 </div>
 
+<script type=text/html id='tmp'>
+{{ each  result v i}}
+    <li     data-id='{{v.indexmenuId}}' style=" display: {{i>7?'none':'block'}}" data-type="{{i>7?1:0}}"
+    {{if i==7}}
+            id='anc'
+
+    {{/if}}
+
+    >
+        <a href="{{v.titlehref}}">
+           {{@v.img}}
+            <p>{{v.name}}</p>
+        </a>
+    </li>
+{{/each}}
+
+</script>
+<script type=text/html id='tmp2'>
+{{each result v i}}
+    <li>
+    <a href="moneyproduct.html?productid={{v.productId}}">
+        <div class='left fl'>
+       {{@v.productImg2}}
+        </div>
+        <div class='right'>
+        <div class='top'>
+
+        {{v.productName}}
+    <span>{{v.productPinkage}}</span>
+
+    </div>
+    <div class='bottom'>
+        <span class='fl'>{{v.productFrom}} | {{v.productTime}}</span>
+    <span class='fr'>{{v.productComCount}}</span>
+
+        </div>
+
+        </div>
+
+
+
+
+        </a>
+
+        </li>
+{{/each }}
+</script>
+
+
 <script src='lib/jquery/jquery.min.js'></script>
 <script src='lib/template/template-web.js'></script>
 <script src='lib/flexible/index.js'></script>
+<script src='js/index.js'></script>
 </body>
 </html>

@@ -346,13 +346,15 @@ img {
   height: 1.24rem;
   padding: 0.20rem;
   background-color: #fff;
+  text-align: center;
 }
 .container .page div {
   width: 33.3%;
   float: left;
+  text-align: center;
 }
 .container .page a {
-  display: block;
+  display: inline-block;
   width: 2.20rem;
   height: 0.93rem;
   background-image: linear-gradient(#ffffff, #cccccc);

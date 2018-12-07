@@ -74,7 +74,7 @@
 
     padding: 0.53rem 0;
     width: 100%;
-    background-color: @bcColor;
+    background-color:  @bcColor;
     .top{
       overflow: hidden;
       border-top:0.03rem solid #c4c4c4;
@@ -106,101 +106,56 @@
       }
     }
   }
-  .tit{
+  .title{
     height: 1.00rem;
-    border-bottom:1px solid @borderColor ;
     border-top: 1px solid @borderColor;
-    background-image: linear-gradient(#ffffff,#cccccc);
-    padding: 0 0.13rem;
-    line-height: 1.00rem;
-    font-size: 0.30rem;
-    a.sai{
-      width: 1.67rem;
-      height: 0.80rem;
-      margin-top: 0.11rem;
-      line-height: 0.80rem;
-      text-align: center;
-      background-image:linear-gradient(#cccccc,#ffffff) ;
-      border-radius: 0.13rem;
-    }
-  }
-  .discount{
-    background-color: #FFFFFF;
-    li{
-      overflow: hidden;
-      padding: 0.33rem 0.13rem;
-      border-bottom: 2px solid #f1f1f1;
-
-      .left{
-
-        img{
-          height: 2.20rem;
-          width: 2.20rem;
-
-        }
-      }
-      .right{
-        overflow: hidden;
-        color: #333;
-        font-size: 0.32rem;
-        padding-left: 0.27rem;
-        .top p{
-          margin-top:0.27rem;
-          color: #ff761a;
-        }
-        .bottom{
-          margin-top:0.27rem ;
-          color: #a1a1a1;
-          font-size: 0.19rem;
-        }
-      }
-    }
-
-    .more-bar{
-      height: 0.73rem;
-      padding: 0.09rem 0.09rem 0.09rem;
-
-      a{
-        display: block;
-        height: 0.64rem;
-        line-height: 0.64rem;
-        text-align: center;
-        font-size: 0.24rem;
-        border: 0.03rem solid #f1f1f1;
-        border-radius: 0.07rem;
-        background-image: linear-gradient(#ffffff, #f4f4f4);
-
-      }
-    }
-  }
-  .page{
-    height: 1.24rem;
-    padding: 0.20rem;
-    text-align: center;
-    div{
-      text-align: center;
-      width: 33.3%;
-    float: left;
-    }
+    border-bottom: 1px solid @borderColor;
+    background-image: linear-gradient(#FFFFFF,#cccccc);
     a{
       display: inline-block;
-      width: 2.20rem;
-      height: 0.93rem;
-      background-image: linear-gradient(#ffffff, #cccccc);
-      border: 1px solid @borderColor;
-      border-radius: 0.13rem;
-      text-align: center;
-      line-height: 0.93rem;
-      font-size: 0.32rem;
-    }
+      line-height: 1.00rem;
+      height: 1.00rem;
+      font-size: 0.36rem;
+      padding-left: 0.13rem;
 
-    select{
-      width: 2.20rem;
-      height: 0.93rem;
-      border: 1px solid @borderColor;
-      padding-left: 0.27rem;
-      font-size: 0.32rem;
+
     }
   }
+  .remain{
+    height: 1.60rem;
+    padding: 0.27rem;
+    background-color: #fff;
+    p{
+      height: 100%;
+      width: 100%;
+      background-color: @bcColor;
+      border:3px solid @borderColor;
+      line-height:1.06rem ;
+      font-size:0.32rem;
+      color: #7c3c2d;
+      padding-left:0.13rem;
+    }
+  }
+  .category_title{
+    background-color: @bcColor;
+    border: 3px solid @borderColor;
+    border-radius: 0.13rem;
+    li{
+      height: 1.04rem;
+      line-height:1.04rem;
+      font-size: 0.40rem;
+      font-weight: bold;
+       position: relative;
+      padding-left: 0.13rem;
+      border-bottom: 1px solid @borderColor;
+      i{
+     position: absolute;
+        top: 0.29rem;
+        right:0.29rem;
+      }
+    }
+  }
+
+
 
 }

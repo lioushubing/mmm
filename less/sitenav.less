@@ -2,12 +2,15 @@
 @import "normalize";
 @import "base";
 @import "veriable";
+.red{
+  color: red;
+}
 .container{
   width: 100%;
   max-width:10.00rem;
   min-width: 4.27rem;
 
-  background-color: #FFFFFF;
+  background-color: #f1f1f1;
   margin: 0 auto;
 
   .header{
@@ -24,7 +27,7 @@
       font-size: 0.53rem;
     }
     .fa{
-     font-size:0.53rem;
+      font-size:0.53rem;
       color: #FFFFFF;
       position: absolute;
       left: 0.40rem;
@@ -46,7 +49,7 @@
   }
 
   .footer{
-    margin-top: 0.67rem;
+
     padding:0 0 0.53rem 0;
     width: 100%;
     background-color: @bcColor;
@@ -81,68 +84,52 @@
       }
     }
   }
-
-  .discount{
-    background-color: #FFFFFF;
-    li{
+  .content{
+    width: 6.45rem;
+    margin: 0 auto;
+  
+    ul{
+     padding-bottom: 0.67rem;
       overflow: hidden;
-      padding: 0.33rem 0.13rem;
-      border-bottom: 2px solid #f1f1f1;
-
-      .left{
-
-        img{
-          height: 2.20rem;
-          width: 2.20rem;
-
-        }
-      }
-      .right{
-        overflow: hidden;
-        color: #333;
-        font-size: 0.32rem;
-        .top span{
-          color: #ff761a;
-        }
-        .bottom{
-          margin-top: 0.87rem;
-          color: #a1a1a1;
-          font-size: 0.19rem;
-        }
-      }
     }
 
- 
-  }
-  .page{
-    height: 1.24rem;
-    padding: 0.20rem;
-    background-color: #fff;
-    text-align: center;
-    div{
-      width: 33.3%;
+    li{
       float: left;
-      text-align: center;
-    }
-    a{
-      display: inline-block;
-      width: 2.20rem;
-      height: 0.93rem;
-      background-image: linear-gradient(#ffffff, #cccccc);
-      border: 1px solid @borderColor;
-      border-radius: 0.13rem;
-      text-align: center;
-      line-height: 0.93rem;
-      font-size: 0.32rem;
+      border: 3px solid @borderColor;
+      background-color: @bcColor;
+      margin-top: 0.13rem;
+      margin-right: 0.13rem;
+
+     a{
+       height: 0.75rem;
+       line-height:0.75rem ;
+
+       display: inline-block;
+       padding: 0 0.20rem;
+
+       img{
+         margin-top: 0.13rem;
+         margin-right: 0.13rem;
+         width: 0.47rem;
+         height: 0.47rem;
+         float: left;
+       }
+       span{
+         overflow: hidden;
+         font-size: 25px;
+       }
+     }
+
     }
 
-    select{
-      width: 2.20rem;
-      height: 0.93rem;
-      border: 1px solid @borderColor;
-      padding-left: 0.27rem;
-      font-size: 0.32rem;
-    }
+
   }
+  .color{
+    width: 100%;
+    background-color: #fff;
+  }
+
+
+
 
 }

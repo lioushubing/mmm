@@ -373,6 +373,7 @@ img {
   overflow: hidden;
   color: #333;
   font-size: 0.32rem;
+  padding-left: 0.27rem;
 }
 .container .discount li .right .top p {
   margin-top: 0.27rem;
@@ -400,13 +401,15 @@ img {
 .container .page {
   height: 1.24rem;
   padding: 0.20rem;
+  text-align: center;
 }
 .container .page div {
+  text-align: center;
   width: 33.3%;
   float: left;
 }
 .container .page a {
-  display: block;
+  display: inline-block;
   width: 2.20rem;
   height: 0.93rem;
   background-image: linear-gradient(#ffffff, #cccccc);

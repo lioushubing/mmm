@@ -339,53 +339,50 @@ img {
 .container .footer .bottom .app {
   color: red;
 }
-.container .category {
+.container .title {
+  height: 1.00rem;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  background-image: linear-gradient(#ffffff, #cccccc);
+}
+.container .title a {
+  display: inline-block;
+  line-height: 1.00rem;
+  height: 1.00rem;
+  font-size: 0.36rem;
+  padding-left: 0.13rem;
+}
+.container .remain {
+  height: 1.60rem;
+  padding: 0.27rem;
+  background-color: #fff;
+}
+.container .remain p {
+  height: 100%;
   width: 100%;
+  background-color: #f1f1f1;
+  border: 3px solid #c4c4c4;
+  line-height: 1.06rem ;
+  font-size: 0.32rem;
+  color: #7c3c2d;
+  padding-left: 0.13rem;
+}
+.container .category_title {
+  background-color: #f1f1f1;
   border: 3px solid #c4c4c4;
   border-radius: 0.13rem;
 }
-.container .category .category-li {
+.container .category_title li {
+  height: 1.04rem;
+  line-height: 1.04rem;
+  font-size: 0.40rem;
+  font-weight: bold;
+  position: relative;
+  padding-left: 0.13rem;
   border-bottom: 1px solid #c4c4c4;
 }
-.container .category .category-li:last-of-type .tit {
-  border-bottom: 1px solid  #c4c4c4;
-}
-.container .category .tit {
-  display: block;
-  padding-left: 0.27rem;
-  height: 1.04rem;
-  font-size: 0.37rem;
-  font-weight: bolder;
-  line-height: 1.04rem;
-  position: relative;
-  border-bottom: 1px solid  #c4c4c4;
-}
-.container .category i {
+.container .category_title li i {
   position: absolute;
-  right: 26px;
-  top: 24px;
-  font-size: 0.37rem;
-}
-.container .centent {
-  display: none;
-  overflow: hidden;
-  background-color: #f9f9f9;
-}
-.container .centent li {
-  width: 33.33%;
-  height: 1.04rem;
-  float: left;
-  border-bottom: 1px solid  #c4c4c4;
-  border-right: 1px solid  #c4c4c4 ;
-}
-.container .centent li:nth-child(3n) {
-  border-right: none;
-}
-.container .centent a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  line-height: 1.04rem;
-  text-align: center;
-  font-size: 0.32rem;
+  top: 0.29rem;
+  right: 0.29rem;
 }

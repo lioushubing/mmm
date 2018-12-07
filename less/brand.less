@@ -1,0 +1,345 @@
+@charset "UTF-8";
+@import "normalize";
+@import "base";
+@import "veriable";
+.container{
+  width: 100%;
+  max-width:10.00rem;
+  min-width: 4.27rem;
+
+  background-color: #f1f1f1;
+  margin: 0 auto;
+
+  .header{
+    height: 1.33rem;
+    width: 100%;
+    background-color: #FF841D;
+    position: relative;
+    .logo{
+
+      width: 4.95rem;
+      height: 0.67rem;
+      background: url('../images/header_logo.png') center center;
+
+      background-size:4.95rem
+      0.67rem;
+      position: absolute;
+      top:0.35rem;
+      left:0.29rem;
+
+    }
+    .download{
+
+
+      height:0.91rem;
+      width:0.91rem;
+      background: url('../images/header_app.png') center center;
+      background-size: 0.91rem 0.91rem;
+      position: absolute;
+      right: 0.27rem;
+      top: 0.21rem;
+    }
+
+
+  }
+  .search{
+    height: 1.33rem;
+    width: 100%;
+    padding-right:1.92rem;
+    padding-left: 0.16rem;
+    position: relative;
+    background-color: #fff;
+    button{
+      height: 0.80rem;
+      width: 1.60rem;
+      background-color: #FF841D;
+      position: absolute;
+      top:0.29rem;
+      right: 0.21rem;
+      border-radius: 0.4rem;
+      color: floralwhite;
+      font-size: 0.30rem;
+    }
+    input{
+      width: 100%;
+      height: 0.80rem;
+      border-radius: 0.4rem;
+      background-color: #f1f1f1;
+      margin-top: 0.27rem;
+      font-size: 0.24rem;
+      padding-left: 0.24rem;
+    }
+  }
+  .footer{
+
+    padding: 0.53rem 0;
+    width: 100%;
+    background-color:  @bcColor;
+    .top{
+      overflow: hidden;
+      border-top:0.03rem solid #c4c4c4;
+      border-bottom:0.03rem solid #c4c4c4 ;
+      a{
+        height:0.63rem;
+        float: left;
+        line-height: 0.63rem;
+        text-align: center;
+        border-right:   0.03rem solid #c4c4c4;
+        display: inline-block;
+        width: 33.3%;
+        font-size: 0.37rem;
+      }
+      a:last-of-type{
+        border: none;
+      }
+    }
+    .bottom{
+      color: #5b6168;
+      margin-top: 0.32rem;
+      p{
+        text-align: center;
+        font-size: 0.27rem;
+
+      }
+      .app{
+        color: red;
+      }
+    }
+  }
+  .title{
+    height: 1.00rem;
+    border-top: 1px solid @borderColor;
+    border-bottom: 1px solid @borderColor;
+    background-image: linear-gradient(#FFFFFF,#cccccc);
+    a{
+      display: inline-block;
+      line-height: 1.00rem;
+      height: 1.00rem;
+      font-size: 0.36rem;
+      padding-left: 0.13rem;
+
+
+    }
+  }
+  .facia{
+    height: 0.93rem;
+    border-top: 2px solid @borderColor;
+    border-bottom:2px  solid @borderColor ;
+    line-height: 0.93rem;
+    color: #7c3c2d;
+   font-size: 0.32rem;
+    font-weight: bold;
+    padding-left:0.13rem;
+  }
+  .sign{
+    li{
+      height: 1.73rem;
+      padding:0.27rem;
+      border-bottom: 1px solid #f1f1f1;
+      background-color: #fff;
+      .left{
+        float: left;
+        height: 0.53rem;
+        width: 0.53rem;
+        background-color: #c9c9c9;
+        color: white;
+        font-size: 0.27rem;
+        text-align: center;
+        line-height: 0.53rem;
+      }
+      .right{
+        float: right;
+        font-size: 0.67rem;
+        color: #82888f;
+        margin-top: 0.20rem;
+      }
+      .info{
+        overflow: hidden;
+        height: 100%;
+        padding-left: 0.27rem;
+        .text{
+          font-size: 0.40rem;
+        }
+        P{
+          margin-top: 0.30rem;
+          font-size: 0.24rem;
+          color: #82888f;
+
+        }
+
+
+      }
+
+
+
+    }
+    li:nth-child(1){
+      .left{
+        background-color: rgb(241, 15, 15);
+      }
+
+    }
+    li:nth-child(2){
+      .left{
+        background-color:  rgb(255, 147, 21);
+      }
+
+    }
+    li:nth-child(3){
+      .left{
+        background-color:  rgb(138, 223, 91);
+      }
+
+    }
+
+  }
+  .sales{
+    p{
+      height: 0.93rem;
+      background-color: @bcColor;
+      border-top: 2px  solid @borderColor;
+      border-bottom: 2px solid @borderColor;
+      font-size:0.29rem;
+      font-weight: bold;
+      color: #7c3c2d;
+      line-height:0.93rem;
+      padding-left: 0.27rem;
+
+    }
+  }
+  .content{
+    li{
+      height:3.40rem;
+      background-color: #FFFFFF;
+      padding: 0.33rem;
+
+      .fl{
+        img{
+          height: 200px;
+          width: 200px;
+        }
+      }
+      .right{
+        overflow: hidden;
+        height:100%;
+        padding: 0.13rem;
+        .text{
+          font-size: 0.33rem;
+          margin-bottom: 0.30rem;
+        }
+        p{
+          font-size: 0.33rem;
+          color: #e61805;
+          margin-bottom: 0.30rem;
+
+        }
+        .other{
+           position: relative;
+          span{
+            color: #a1a1a1;
+          }
+          .start{
+            position: absolute;
+            right: 0;
+            top: -0.67rem;
+          }
+
+          .start span{
+            color:#e61805 ;
+            font-size: 0.27rem;
+          }
+
+        }
+
+
+      }
+
+
+
+    }
+  }
+  .comment{
+    height: 0.93rem;
+    border-top: 2px solid @borderColor;
+    border-bottom:2px  solid @borderColor ;
+    line-height: 0.93rem;
+    color: #7c3c2d;
+    font-size: 0.32rem;
+    font-weight: bold;
+    padding-left:0.13rem;
+  }
+  .comment_list{
+     ul{
+       padding: 0.13rem;
+       background-color: #fff;
+     }
+    li{
+      overflow: hidden;
+
+      background-color: #fff;
+      .top{
+        overflow: hidden;
+        height:2.67rem;
+        padding: 0.27rem;
+      .fl{
+        height:2.67rem;
+        width: 2.67rem;
+      }
+        .info{
+          overflow: hidden;
+          padding: 0.27rem;
+         .text{
+
+           font-size: 0.27rem;
+           color: #8b93a3;
+         }
+        }
+      }
+      .bottom{
+        background-color: #f8f8f8;
+        margin-top: 1.33rem;
+     border: 3px solid #e7e7e7;
+        padding: 0.27rem;
+        .top2{
+          height: 0.24rem;
+          font-size: 0.24rem;
+          color: #366d71;
+          .start{
+            color: #ff9314;
+          }
+        }
+        .bottom2{
+          margin-top: 0.27rem;
+          position: relative;
+        }
+        .bottom2::before{
+          content: '';
+          height: 0;
+          width: 0;
+          border-width: 0.2rem;
+
+          border-style: solid;
+
+          border-color:  transparent transparent #e7e7e7 transparent ;
+
+          position: absolute;
+          left: 0.75rem;
+          top: -1.21rem;
+
+        }
+        .time{
+          color: #a49d99;
+        }
+
+
+
+
+
+      }
+
+
+    }
+  }
+
+
+}
