@@ -24,51 +24,9 @@
 
     <!--标题-->
     <div class='title'>
-        <ul>
-            <li>
-                <a href="#">
-                    <img src="http://www.juanlaoda.com/ImageUpload/2013310191729944.jpg" alt="">
-                    <p>肯德基</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://www.juanlaoda.com/ImageUpload/2013310191729944.jpg" alt="">
-                    <p>肯德基</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://www.juanlaoda.com/ImageUpload/2013310191729944.jpg" alt="">
-                    <p>肯德基</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://www.juanlaoda.com/ImageUpload/2013310191729944.jpg" alt="">
-                    <p>肯德基</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://www.juanlaoda.com/ImageUpload/2013310191729944.jpg" alt="">
-                    <p>肯德基</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://www.juanlaoda.com/ImageUpload/2013310191729944.jpg" alt="">
-                    <p>肯德基</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://www.juanlaoda.com/ImageUpload/2013310191729944.jpg" alt="">
-                    <p>肯德基</p>
-                </a>
-            </li>
+        <ul id='title'>
 
-
+           <!--坑-->
         </ul>
 
 
@@ -91,8 +49,20 @@
 
 
     </div>
+
+    <script type=text/html id='tmp'>
+        {{each result v i}}
+        <li>
+        <a href="couponproduct.html?couponid={{v.couponId}}">
+            <img src="{{v.couponImg}}" alt="">
+            <p>{{v.couponTitle}}</p>
+            </a>
+            </li>
+        {{/each}}
+    </script>
     <script src='lib/jquery/jquery.min.js'></script>
     <script src='lib/template/template-web.js'></script>
     <script src='lib/flexible/index.js'></script>
+    <script src='js/coupon.js'></script>
 </body>
 </html>

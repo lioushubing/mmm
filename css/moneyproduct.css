@@ -444,3 +444,44 @@ img {
   font-size: 0.27rem;
   text-align: left;
 }
+.container .details .content .title .info2 img {
+  float: right;
+}
+.ul li strong {
+  color: #f18b4b;
+  float: right;
+}
+.list {
+  height: auto!important;
+  overflow: hidden;
+}
+.list .userimg {
+  height: 1.11rem;
+  width: 1.11rem;
+  float: left;
+}
+.list .userimg img {
+  border-radius: 50%;
+}
+.list .con {
+  overflow: hidden;
+  padding-top: 0.20rem;
+  padding-left: 0.13rem;
+}
+.list .con .username {
+  float: left;
+  color: #4a86c2;
+}
+.list .con .time {
+  float: right;
+  color: #7e7f97;
+}
+.list .con .content {
+  padding: 10px 0 0 0 ;
+  font-size: 0.27rem;
+}
+.ui-border-b {
+  overflow: hidden;
+  display: block;
+  height: 2.67rem;
+}

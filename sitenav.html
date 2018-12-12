@@ -31,34 +31,8 @@
     <div class='color'>
     <div class='content'>
      <ul>
-         <li><a href="#"><img src="http://misc.manmanbuy.com/images/hzweb/joyo.png" alt=""> <span> 中国亚马逊
-            </span></a></li>
-         <li><a href="#"><img src="http://misc.manmanbuy.com/images/hzweb/joyo.png" alt=""> <span> 中国亚马逊
-            </span></a></li>
-         <li><a href="#"><img src="http://misc.manmanbuy.com/images/hzweb/joyo.png" alt=""> <span> 中国亚马逊
-            </span></a></li>
-         <li><a href="#"><img src="http://misc.manmanbuy.com/images/hzweb/joyo.png" alt=""> <span> 中国亚马逊
-            </span></a></li>
-         <li><a href="#"><img src="http://misc.manmanbuy.com/images/hzweb/joyo.png" alt=""> <span> 中国亚马逊
-            </span></a></li>
-         <li><a href="#"><img src="http://misc.manmanbuy.com/images/hzweb/joyo.png" alt=""> <span> 中国亚马逊
-            </span></a></li>
-         <li><a href="#"><img src="http://misc.manmanbuy.com/images/hzweb/joyo.png" alt=""> <span> 中国亚马逊
-            </span></a></li>
-         <li><a href="#"><img src="http://misc.manmanbuy.com/images/hzweb/joyo.png" alt=""> <span> 中国亚马逊
-            </span></a></li>
-         <li><a href="#"><img src="http://misc.manmanbuy.com/images/hzweb/joyo.png" alt=""> <span> 中国亚马逊
-            </span></a></li>
-         <li><a href="#"><img src="http://misc.manmanbuy.com/images/hzweb/joyo.png" alt=""> <span> 中国亚马逊
-            </span></a></li>
-         <li><a href="#"><img src="http://misc.manmanbuy.com/images/hzweb/joyo.png" alt=""> <span> 中国亚马逊
-            </span></a></li>
-         <li><a href="#"><img src="http://misc.manmanbuy.com/images/hzweb/joyo.png" alt=""> <span> 中国亚马逊
-            </span></a></li>
-         <li><a href="#"><img src="http://misc.manmanbuy.com/images/hzweb/joyo.png" alt=""> <span> 中国亚马逊
-            </span></a></li>
-         <li><a href="#"><img src="http://misc.manmanbuy.com/images/hzweb/joyo.png" alt=""> <span> 中国亚马逊
-            </span></a></li>
+         <!--坑-->
+
      </ul>
 
 
@@ -81,8 +55,14 @@
 
 
     </div>
+    <script type=text/html id='tmp'>
+        {{each result v i}}
+        <li><a href="{{v.navHref}}"><img src="{{v.navImg}}" alt=""> <span>{{v.navTitle}}</span></a></li>
+        {{/each}}
+    </script>
     <script src='lib/jquery/jquery.min.js'></script>
     <script src='lib/template/template-web.js'></script>
     <script src='lib/flexible/index.js'></script>
+    <script src='js/sitenav.js'></script>
 </body>
 </html>

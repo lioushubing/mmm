@@ -319,20 +319,6 @@ img {
 .container .footer .bottom .app {
   color: red;
 }
-.container .ul {
-  padding: 0.27rem;
-  width: 3.60rem;
-  margin: 0.27rem auto;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
-}
-.container .ul li {
-  height: 0.53rem;
-  line-height: 0.53rem;
-  border-bottom: 1px dashed #c4c4c4;
-}
-.container .ul a {
-  display: block;
-}
 .container .details .content {
   padding: 0.27rem;
 }
@@ -443,4 +429,19 @@ img {
   height: 0.41rem;
   font-size: 0.27rem;
   text-align: left;
+}
+.container .details .content .title .info2 {
+  height: auto;
+}
+.container .details .content .title .info2 img {
+  float: right;
+}
+.container .details .content .title .img {
+  padding-left: 0.40rem;
+}
+.container .details .content .buy a {
+  border-radius: 0.07rem;
+}
+.container .details .content .publish .list {
+  height: auto;
 }

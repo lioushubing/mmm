@@ -333,6 +333,7 @@ img {
   overflow: hidden;
   color: #333;
   font-size: 0.32rem;
+  padding-left: 0.27rem;
 }
 .container .discount li .right .top span {
   color: #ff761a;

@@ -24,184 +24,9 @@
 
     <!--内容区-->
     <div class='details'>
-        <div class='content'>
+        <div class='content' id='content'>
 
-            <div class='title'>
-                <div class='title2'>
-                    移动端凑单品：海天 鲜味 生抽 1.28L
-                </div>
-                <div class='info1'>
-                    <span class='mall'>京东商城</span>
-                    <span class='time'>10-25 14:10</span>
-                    <span class='author'>小编烟火 / 慢慢买</span>
-                </div>
-                <div class='info2 clearfix'>
-
-
-                    <img src="./images/hua.jpg" alt="" class='fr'>
-                    天猫旗舰店特价9元包邮试用，超值好价，妈咪们可以入手啦！
-
-                </div>
-                <div class='img'>
-
-                    <img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=sqkb_sources/static/img/news/2016/01bbdeaab8c24230957c3ce7015f51f57ada7c33.jpg" alt="">
-
-                </div>
-                <div class='ul'>
-                    <ul>
-                        <li>
-                            <a href="#" >
-                                <span class='fl'>北京</span>
-                                <span class='red fr'>有货</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" >
-                                <span class='fl'>北京</span>
-                                <span class='red fr'>有货</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" >
-                                <span class='fl'>北京</span>
-                                <span class='red fr'>有货</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" >
-                                <span class='fl'>北京</span>
-                                <span class='red fr'>有货</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" >
-                                <span class='fl'>北京</span>
-                                <span class='red fr'>有货</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" >
-                                <span class='fl'>北京</span>
-                                <span class='red fr'>有货</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" >
-                                <span class='fl'>北京</span>
-                                <span class='red fr'>有货</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" >
-                                <span class='fl'>北京</span>
-                                <span class='red fr'>有货</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" >
-                                <span class='fl'>北京</span>
-                                <span class='red fr'>有货</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" >
-                                <span class='fl'>北京</span>
-                                <span class='red fr'>有货</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" >
-                                <span class='fl'>北京</span>
-                                <span class='red fr'>有货</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" >
-                                <span class='fl'>北京</span>
-                                <span class='red fr'>有货</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" >
-                                <span class='fl'>北京</span>
-                                <span class='red fr'>有货</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" >
-                                <span class='fl'>北京</span>
-                                <span class='red fr'>有货</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" >
-                                <span class='fl'>北京</span>
-                                <span class='red fr'>有货</span>
-                            </a>
-                        </li>
-
-
-                    </ul>
-
-
-                </div>
-
-
-
-            </div>
-
-            <div class='buy'>
-                <a href="#">
-                    前往购买
-                </a>
-
-                <!--60 20 40-->
-            </div>
-            <div class='img'>
-                <img src="./images/mmbweixin2.png" alt="">
-            </div>
-            <div class='publish'>
-                <div class='tit'>
-                    发表评论
-                </div>
-                <div class='reply'>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <div class="ctrl">
-                        <input type="submit" value='发表评论'>
-                    </div>
-                </div>
-                <div class='tit'>
-                    最新评论
-                </div>
-                <div class='list'>
-                    <div class='fl'>
-                        <img src="http://home.manmanbuy.com/upface/face/1466230634_162.jpg" alt="">
-                    </div>
-                    <div class='info3'>
-                        <div class='top'>
-                            <div class='fl'>赶鸭子上架</div>
-                            <div class='fr'>2016/10/25 14:18:45</div>
-
-                        </div>
-                        <div  class='bottom1'>
-                            比超市便宜了几块
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-
-            </div>
-
-
-
-
-
-        </div>
-
+    <!--坑-->
     </div>
 
     <!--脚步-->
@@ -221,8 +46,63 @@
 
 
     </div>
+    <script type=text/html id='tmp'>
+        {{each result v i}}
+
+
+
+
+            <div class='title'>
+            <div class='title2'>
+           {{v.productName}}
+        </div>
+        <div class='info1'>
+            <span class='mall'>{{v.productFrom}}</span>
+            <span class='time'>{{v.productTime}}</span>
+        <span class='author'>{{v.productTips}}</span>
+            </div>
+            <div class='info2 clearfix'>
+
+
+                <img src="./images/hua.jpg" alt="">
+           {{v.productInfo}}
+
+        </div>
+        <div class='img'>
+          
+            {{@v.productImg}}
+
+            </div>
+
+
+
+
+            </div>
+
+            <div class='buy'>
+            <a href="#">
+            前往购买
+            </a>
+
+            <!--60 20 40-->
+            </div>
+            <div class='img'>
+            <img src="./images/mmbweixin2.png" alt="">
+            </div>
+            <div class='publish'>
+           {{@v.productComment}}
+
+
+            </div>
+
+
+
+
+ {{/each}}
+    </script>
     <script src='lib/jquery/jquery.min.js'></script>
     <script src='lib/template/template-web.js'></script>
     <script src='lib/flexible/index.js'></script>
+    <script src='js/discount.js'></script>
 </body>
 </html>

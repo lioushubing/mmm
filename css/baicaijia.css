@@ -339,8 +339,8 @@ img {
 }
 .container .nav .list ul {
   height: 100%;
-  width: 2000px;
   padding-left: 0.13rem;
+  overflow: hidden;
 }
 .container .nav .list li {
   float: left;

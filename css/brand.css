@@ -522,3 +522,10 @@ img {
 .container .comment_list li .bottom .time {
   color: #a49d99;
 }
+.container .comment_list li .bottom {
+  margin-top: 0.67rem;
+}
+.container .comment_list li .top .fl img {
+  height: 2.67rem;
+  width: 2.67rem;
+}

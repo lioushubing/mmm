@@ -25,34 +25,33 @@
         <div class='fr'>
             <i class='fa fa-search'></i>
         </div>
-        <div class='list '>
+        <div class='list'>
 
             <!--选项-->
-           <ul>
-               <li class='on'>
-                   <a href="#">一号店 <i class='fa fa-caret-down'></i></a>
-                   <ul class='popsort '>
-                       <li><a href="#">京东    <i class='check fa fa-check active'></i></a></li>
-                       <li><a href="#">一号店</a></li>
-                       <li><a href="#">天猫超市</a></li>
-                   </ul>
-               </li>
-               <li class='on'>
-                   <a href="#">一号店 <i class='fa fa-caret-down'></i></a>
-                   <ul class='popsort'>
+           <ul >
+               <li class='on jin'>
+                   <a href="#" id='lista'>京东</a><i class='fa fa-caret-down'></i>
+                   <ul class='popsort jindo' id='list'>
                        <li><a href="#">京东</a></li>
                        <li><a href="#">一号店</a></li>
                        <li><a href="#">天猫超市</a></li>
                    </ul>
                </li>
                <li class='on'>
-                   <a href="#">一号店 <i class='fa fa-caret-down'></i></a>
-                   <ul class='popsort'>
+                   <a href="#">华北</a><i class='fa fa-caret-down'></i>
+                   <ul class='popsort hua'>
                        <li><a href="#">京东</a></li>
                        <li><a href="#">一号店</a></li>
                        <li><a href="#">天猫超市</a></li>
                    </ul>
                </li>
+               <li class='on'>
+                   <a href="#">全部</a><i class='fa fa-caret-down'></i>
+                   <ul class='popsort'>
+                       <li><a href="#">全部价格</a><i class="fa fa-check check  active" style="display: inline;"></i></li>
+
+                   </ul>
+
 
            </ul>
 
@@ -69,74 +68,7 @@
 <!--列表区-->
     <div class='product_list'>
         <ul>
-            <li>
-                <div class='pic'>
-                    <img src="http://img14.360buyimg.com/n7/jfs/t1249/292/713271919/121142/1250fb7/553de9a7Nb3f62383.jpg" alt="">
-                </div>
-                <p>3M 耳塞 降噪睡眠 弹性舒适 2枚装 1100</p>
-                <div class='price'>
-                    <span class='fl'>¥1.00</span>
-                    <span class='fr'>去凑单</span>
-                </div>
-            </li>
-            <li>
-                <div class='pic'>
-                    <img src="http://img14.360buyimg.com/n7/jfs/t1249/292/713271919/121142/1250fb7/553de9a7Nb3f62383.jpg" alt="">
-                </div>
-                <p>3M 耳塞 降噪睡眠 弹性舒适 2枚装 1100</p>
-                <div class='price'>
-                    <span class='fl'>¥1.00</span>
-                    <span class='fr'>去凑单</span>
-                </div>
-            </li>
-            <li>
-                <div class='pic'>
-                    <img src="http://img14.360buyimg.com/n7/jfs/t1249/292/713271919/121142/1250fb7/553de9a7Nb3f62383.jpg" alt="">
-                </div>
-                <p>3M 耳塞 降噪睡眠 弹性舒适 2枚装 1100</p>
-                <div class='price'>
-                    <span class='fl'>¥1.00</span>
-                    <span class='fr'>去凑单</span>
-                </div>
-            </li>
-            <li>
-                <div class='pic'>
-                    <img src="http://img14.360buyimg.com/n7/jfs/t1249/292/713271919/121142/1250fb7/553de9a7Nb3f62383.jpg" alt="">
-                </div>
-                <p>3M 耳塞 降噪睡眠 弹性舒适 2枚装 1100</p>
-                <div class='price'>
-                    <span class='fl'>¥1.00</span>
-                    <span class='fr'>去凑单</span>
-                </div>
-            </li>
-            <li>
-            <div class='pic'>
-                <img src="http://img14.360buyimg.com/n7/jfs/t1249/292/713271919/121142/1250fb7/553de9a7Nb3f62383.jpg" alt="">
-            </div>
-            <p>3M 耳塞 降噪睡眠 弹性舒适 2枚装 1100</p>
-            <div class='price'>
-                <span class='fl'>¥1.00</span>
-                <span class='fr'>去凑单</span>
-            </div>
-        </li>
-            <li>
-            <div class='pic'>
-                <img src="http://img14.360buyimg.com/n7/jfs/t1249/292/713271919/121142/1250fb7/553de9a7Nb3f62383.jpg" alt="">
-            </div>
-            <p>3M 耳塞 降噪睡眠 弹性舒适 2枚装 1100</p>
-            <div class='price'>
-                <span class='fl'>¥1.00</span>
-                <span class='fr'>去凑单</span>
-            </div>
-        </li>
-
-
-
-
-
-
-
-
+              <!--坑-->
         </ul>
 
 
@@ -159,8 +91,44 @@
 
 
     </div>
+    <script type=text/html id='tmp'>
+
+
+        {{each result v i}}
+
+            <li data-id='{{v.shopId}}'><a href="javascript:;">{{v.shopName}}</a><i class="fa fa-check check {{i==0?ac:''}}" style="display: inline;"></i></li>
+
+
+        {{/each}}
+    </script>
+    <script type=text/html id='tmp2'>
+        {{each result v i}}
+        <li data-id='{{v.areaId}}'><a href="javascript:;">{{v.areaName}}</a><i class="fa fa-check check {{i==0?ac:''}}" style="display: inline;"></i></li>
+        {{/ea}}
+    </script>
+
+
+    <script type=text/html id='tmp3'>
+     {{each result v i}}
+
+        <li>
+        <div class='pic'>
+
+            <img src="{{@v.productImg}}" alt="">
+            </div>
+            <p>{{v.productName}}</p>
+        <div class='price'>
+            <span class='fl'>{{v.productPrice}}</span>
+        <span class='fr'>去凑单</span>
+            </div>
+            </li>
+
+{{/each}}
+    </script>
+
     <script src='lib/jquery/jquery.min.js'></script>
     <script src='lib/template/template-web.js'></script>
     <script src='lib/flexible/index.js'></script>
+    <script src='js/gsproduct.js'></script>
 </body>
 </html>
